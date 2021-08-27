@@ -14,13 +14,15 @@ public class PlayerEngine : MonoBehaviour
       
         playerRB = GetComponent<Rigidbody2D>();
     }
-
-    void Update()
+    private void FixedUpdate()
     {
-
         xPos = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         transform.Translate(xPos, 0, 0);
 
+       
+    }
+    private void Update()
+    {
         if (Input.GetKeyDown("space") && jumpCounter == 0)
         {
             jumpCounter++;
@@ -31,21 +33,18 @@ public class PlayerEngine : MonoBehaviour
             jumpCounter++;
             playerRB.AddForce(new Vector2(0, 150));
         }
-
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Floor")
         {
             jumpCounter = 0;
+            print(jumpCounter);
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Lava")
+        if (collision.gameObject.tag == "Lava")
         {
-            transform.position = new Vector2(-110, -2.5f);
+            transform.position = new Vector2(-110, -3.0f);
         }
         if (collision.gameObject.tag == "Enemy")
         {

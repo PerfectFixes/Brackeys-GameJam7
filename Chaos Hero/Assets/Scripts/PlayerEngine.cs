@@ -16,7 +16,9 @@ public class PlayerEngine : MonoBehaviour
     private void FixedUpdate()
     {
         xPos = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        transform.Translate(xPos, 0, 0);       
+        transform.Translate(xPos, 0, 0);
+
+       
     }
     private void Update()
     {

@@ -9,19 +9,17 @@ public class BadPlatforms : MonoBehaviour
     void Start()
     {
         changeColor = GetComponent<Renderer>();
-        if (PlayerPrefs.GetString("Bad Platform") == "False")
-        {
-            print("Changing Color ");
-
-            changeColor.material.color = Color.red;
-            //Change the tag 
-            transform.gameObject.tag = "Lava";
-        }
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (PlayerPrefs.GetString("Bad Platform") == "True")
+        {
+            changeColor.material.color = Color.red;
+            //Change the tag 
+            transform.gameObject.tag = "Lava";
+        }
     }
 }

@@ -27,7 +27,7 @@ public class PlayerEngine : MonoBehaviour
             jumpCounter++;
             playerRB.AddForce(new Vector2(0, 370));
         }
-        else if (Input.GetKeyDown("space") && jumpCounter == 1)
+        else if (Input.GetKeyDown("space") && (jumpCounter == 1) && (PlayerPrefs.GetString("DJCancel") == "False"))
         {
             jumpCounter++;
             playerRB.AddForce(new Vector2(0, 150));
@@ -38,7 +38,6 @@ public class PlayerEngine : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             jumpCounter = 0;
-            print(jumpCounter);
         }
 
         if (collision.gameObject.tag == "Lava")

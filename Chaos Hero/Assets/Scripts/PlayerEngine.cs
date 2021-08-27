@@ -8,18 +8,15 @@ public class PlayerEngine : MonoBehaviour
     float xPos;
     float speed = 7f;
     int jumpCounter = 0;
+    
     void Start()
-    {
-        //Starting position set
-      
+    { 
         playerRB = GetComponent<Rigidbody2D>();
     }
     private void FixedUpdate()
     {
         xPos = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        transform.Translate(xPos, 0, 0);
-
-       
+        transform.Translate(xPos, 0, 0);       
     }
     private void Update()
     {

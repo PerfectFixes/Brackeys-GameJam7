@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Lava
+  - Enemy
   layers:
   - Default
   - TransparentFX

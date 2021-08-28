@@ -17,7 +17,6 @@ public class RaisingLava : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            print("Test");
             if((PlayerPrefs.GetString("Raising Lava") == "False") && (!isOn))
             {
                 Invoke(nameof(SpawnBlocker), 1);

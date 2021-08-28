@@ -29,7 +29,7 @@ public class RaisingLava : MonoBehaviour
     private void SpawnBlocker()
     {
         Instantiate(blocker, new Vector2(transform.position.x + 1.82f, transform.position.y - 0.6f), transform.rotation);
-        Instantiate(blocker, new Vector2(transform.position.x - 7f, transform.position.y - 0.6f), transform.rotation);
+        Instantiate(blocker, new Vector2(transform.position.x - 11f, transform.position.y - 0.6f), transform.rotation);
 
     }
 }

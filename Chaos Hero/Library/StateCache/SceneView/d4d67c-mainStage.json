@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":29.00682258605957,"y":4.0542497634887699,"z":-5.0738749504089359},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":20.149391174316408,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":-81.33775329589844,"y":5.76852560043335,"z":-4.734351634979248},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":38.458099365234378,"orthographic":true}
@@ -7,3 +8,10 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":-81.33775329589844,"y":5.76852560043335,"z":-4.734351634979248},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":38.458099365234378,"orthographic":true}
 >>>>>>> parent of 610ca50 (Added the raising lava)
+=======
+<<<<<<< Updated upstream
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":34.20597457885742,"y":7.508697986602783,"z":-103.8965835571289},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":169.8564453125,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":false,"showImageEffects":false,"showParticleSystems":false},"in2DMode":true,"pivot":{"x":53.45293045043945,"y":25.246822357177736,"z":-107.35404968261719},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":99.17364501953125,"orthographic":true}
+>>>>>>> Stashed changes
+>>>>>>> parent of 855045d (Merge pull request #3 from PerfectFixes/main)

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 public class PlayerEngine : MonoBehaviour
 {
     Rigidbody2D playerRB;
@@ -42,7 +42,7 @@ public class PlayerEngine : MonoBehaviour
 
         if (collision.gameObject.tag == "Lava")
         {
-            SceneManager.LoadScene("The Level");
+            transform.position = new Vector2(-110, -3.0f);
         }
         if (collision.gameObject.tag == "Enemy")
         {

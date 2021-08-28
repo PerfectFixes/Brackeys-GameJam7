@@ -13,11 +13,17 @@ public class RaisingLava : MonoBehaviour
         lavaAnimator = GetComponent<Animator>();
         isOn = false;
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            if((PlayerPrefs.GetString("Raising Lava") == "False") && (!isOn))
+            if((PlayerPrefs.GetString("Raising Lava") == "True") && (!isOn))
             {
                 Invoke(nameof(SpawnBlocker), 1);
                 isOn = true;
@@ -28,7 +34,5 @@ public class RaisingLava : MonoBehaviour
     private void SpawnBlocker()
     {
         Instantiate(blocker, new Vector2(transform.position.x + 1.82f, transform.position.y - 0.6f), transform.rotation);
-        Instantiate(blocker, new Vector2(transform.position.x - 11f, transform.position.y - 0.6f), transform.rotation);
-
     }
 }

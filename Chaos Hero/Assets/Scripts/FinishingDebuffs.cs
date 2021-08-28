@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FinishingDebuffs : MonoBehaviour
 {
-    int debuffChosen; //Num representor of a certain debuff
+   /* int debuffChosen; //Num representor of a certain debuff
     //static List<int> debuffsHaving = new List<int>(); //List of debuffs player currently has
 
     void Start()
@@ -43,6 +43,6 @@ public class FinishingDebuffs : MonoBehaviour
                 print("Flipping Map");
                 break;
         }
-    }
+    }*/
 
 }
